@@ -1,0 +1,1 @@
+hello{"uid":-1,"gid":-1,"username":"thakur","homedir":"C:\\Users\\thakur","shell":null}hello{"uid":-1,"gid":-1,"username":"thakur","homedir":"C:\\Users\\thakur","shell":null}
