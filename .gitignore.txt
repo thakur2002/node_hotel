@@ -2,3 +2,4 @@ node_modules/
 greeting.txt
 temp.js
 notes.js
+.env
