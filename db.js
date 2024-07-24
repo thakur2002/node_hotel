@@ -1,8 +1,10 @@
 const mongoose=require("mongoose");
-
+require("dotenv").config();
 async function connectDB() {
-    const  mongourl="mongodb://127.0.0.1:27017/hotels";
+    // const  mongourl="mongodb://127.0.0.1:27017/hotels";
+     const mongourl=process.env.dbconnectionstring;
 try{
+
     await mongoose.connect(mongourl);
 }
 catch(err){
