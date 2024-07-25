@@ -7,7 +7,10 @@ connectdb();
 
 app.use(bodyParser.json())
 
-
+const logger=function(req,res,next){
+    console.log(`[${new Date().toLocaleString()}]: Request to ${req.originalUrl}`);
+    next();
+}
 app.get('/',(req,res)=>res.send("Welcome to this server"));
 app.get('/idli',(req,res)=>res.send("here is idli"));
 
