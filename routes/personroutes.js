@@ -6,6 +6,7 @@ const Person = require('../models/person.js');
 router.post('/', async (req, res) => {
     const data = req.body;
     const newperson = new Person(data);
+    console.log(`data of new person ${data.name} is saved`)
     try {
         const response = await newperson.save();
         res.status(200).json(response);
